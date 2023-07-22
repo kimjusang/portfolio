@@ -1,6 +1,6 @@
 import CustomLink from "../CustomLink";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <section
       id="about"
