@@ -1,6 +1,6 @@
-import Link from "next/link";
+import CustomLink from "../CustomLink";
 
-function About() {
+const About = () => {
   return (
     <section
       id="about"
@@ -18,63 +18,33 @@ function About() {
           themes and tumbled head first into the rabbit hole of coding and web
           development. Fast-forward to today, and I&apos;ve had the privilege of
           building software for an&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          <CustomLink
             href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            advertizing agency
-          </Link>
+            text="advertising agency"
+          />
           , a&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          <CustomLink href="https://us.mullenlowe.com/" text="start-up" />,
+          a&nbsp;
+          <CustomLink
             href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            start-up
-          </Link>
-          , a&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            student-led design studio
-          </Link>
+            text="student-led design studio"
+          />
           , and a&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          <CustomLink
             href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            huge corporation
-          </Link>
+            text="huge corporation"
+          />
           .
         </p>
         <p className="mb-4">
           My main focus these days is building products and leading projects for
           our clients at&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Upstatement
-          </Link>
+          <CustomLink href="https://us.mullenlowe.com/" text="Upstatement" />
           . In my free time I&apos;ve also released an&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          <CustomLink
             href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            online video course
-          </Link>
+            text="online video course"
+          />
           &nbsp;that covers everything you need to know to build a web app with
           the Spotify API.
         </p>
@@ -82,19 +52,11 @@ function About() {
           When I’m not at the computer, I’m usually rock climbing, hanging out
           with my wife and two cats, or running around Hyrule searching
           for&nbsp;
-          <Link
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="https://us.mullenlowe.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Korok seeds
-          </Link>
-          .
+          <CustomLink href="https://us.mullenlowe.com/" text="Korok seeds" />.
         </p>
       </div>
     </section>
   );
-}
+};
 
 export default About;
