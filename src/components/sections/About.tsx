@@ -14,45 +14,24 @@ const About: React.FC = () => {
       </div>
       <div>
         <p className="mb-4">
-          Back in 2012, I decided to try my hand at creating custom Tumblr
-          themes and tumbled head first into the rabbit hole of coding and web
-          development. Fast-forward to today, and I&apos;ve had the privilege of
-          building software for an&nbsp;
-          <CustomLink
-            href="https://us.mullenlowe.com/"
-            text="advertising agency"
-          />
-          , a&nbsp;
-          <CustomLink href="https://us.mullenlowe.com/" text="start-up" />,
-          a&nbsp;
-          <CustomLink
-            href="https://us.mullenlowe.com/"
-            text="student-led design studio"
-          />
-          , and a&nbsp;
-          <CustomLink
-            href="https://us.mullenlowe.com/"
-            text="huge corporation"
-          />
-          .
+          As a part of my academic journey, I attended a small lecture where a
+          guest speaker, a former software engineer at NASA, introduced his work
+          on heat flow simulations. It was a captivating experience for me, as
+          it marked my first exposure to the world of software development.
         </p>
         <p className="mb-4">
-          My main focus these days is building products and leading projects for
-          our clients at&nbsp;
-          <CustomLink href="https://us.mullenlowe.com/" text="Upstatement" />
-          . In my free time I&apos;ve also released an&nbsp;
-          <CustomLink
-            href="https://us.mullenlowe.com/"
-            text="online video course"
-          />
-          &nbsp;that covers everything you need to know to build a web app with
-          the Spotify API.
+          Currently, my primary focus is on creating new features and optimizing
+          performance at
+          <CustomLink href="https://www.uxpin.com/" text=" UXPin" />. Beyond my
+          professional responsibilities, I enjoy exploring cutting-edge
+          technologies that push the boundaries of software development and make
+          developers&apos; lives easier.
         </p>
         <p className="mb-4">
-          When I’m not at the computer, I’m usually rock climbing, hanging out
-          with my wife and two cats, or running around Hyrule searching
-          for&nbsp;
-          <CustomLink href="https://us.mullenlowe.com/" text="Korok seeds" />.
+          When I&apos;m away from the keyboard, I enjoy spending time with my
+          wife and friends. I casually practice beatboxing as a hobby and study
+          Japanese, hoping to have a full conversation in Japanese with my
+          Japanese wife some day.
         </p>
       </div>
     </section>
