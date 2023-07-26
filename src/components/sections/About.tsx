@@ -13,13 +13,13 @@ const About: React.FC = () => {
         </h2>
       </div>
       <div>
-        <p className="mb-4">
+        <p className="about-paragraph">
           As a part of my academic journey, I attended a small lecture where a
           guest speaker, a former software engineer at NASA, introduced his work
           on heat flow simulations. It was a captivating experience for me, as
           it marked my first exposure to the world of software development.
         </p>
-        <p className="mb-4">
+        <p className="about-paragraph">
           Currently, my primary focus is on creating new features and optimizing
           performance at
           <CustomLink href="https://www.uxpin.com/" text=" UXPin" />. Beyond my
@@ -27,7 +27,7 @@ const About: React.FC = () => {
           technologies that push the boundaries of software development and make
           developers&apos; lives easier.
         </p>
-        <p className="mb-4">
+        <p className="about-paragraph">
           When I&apos;m away from the keyboard, I enjoy spending time with my
           wife and friends. I casually practice beatboxing as a hobby and study
           Japanese, hoping to have a full conversation in Japanese with my
