@@ -1,42 +1,9 @@
 import Link from "next/link";
+import { workExperiences } from "~/constants/workExperiences";
+import { type WorkExperiencesTypes } from "~/types/workExperiencesTypes";
 
 const Experience = () => {
-  interface WorkExperiences {
-    companyName: string;
-    jobTitle: string;
-    employmentPeriod: string;
-    jobDescription: string;
-    techStacks: string[];
-    url: string;
-    ariaLabelForCompanyNameAndJobTitle: string;
-    ariaLabelForEmploymentPeriod: string;
-  }
-
-  const workExperiences: WorkExperiences[] = [
-    {
-      companyName: `UXPin`,
-      jobTitle: "Software Engineer",
-      employmentPeriod: "2021 — Present",
-      jobDescription:
-        "Develop new features for the UI/UX design tool of UXPin, enabling clients like PayPal, Porsche, Texas Instruments, and others to create final product-looking prototypes with advanced interactions. Additionally, improve performance by refactoring and analyzing technical metrics.",
-      techStacks: [
-        "React",
-        "Redux",
-        "Node.js",
-        "Ruby on Rails",
-        "TypeScript",
-        "JavaScript",
-        "SCSS",
-        "LESS",
-        "MySQL",
-      ],
-      url: "https://www.uxpin.com/",
-      ariaLabelForCompanyNameAndJobTitle: "Software Engineer at UXPin",
-      ariaLabelForEmploymentPeriod: "2021 to Present",
-    },
-  ];
-
-  const renderSectionTypeForSmallScreen = () => {
+  const renderSectionNameForSmallScreen = () => {
     return (
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
@@ -47,8 +14,8 @@ const Experience = () => {
   };
 
   const renderEmploymentPeriods = (
-    employmentPeriod: WorkExperiences["employmentPeriod"],
-    ariaLabelForEmploymentPeriod: WorkExperiences["ariaLabelForEmploymentPeriod"]
+    employmentPeriod: WorkExperiencesTypes["employmentPeriod"],
+    ariaLabelForEmploymentPeriod: WorkExperiencesTypes["ariaLabelForEmploymentPeriod"]
   ) => {
     return (
       <header
@@ -61,10 +28,10 @@ const Experience = () => {
   };
 
   const renderCompanyNameAndJobTitle = (
-    companyName: WorkExperiences["companyName"],
-    jobTitle: WorkExperiences["jobTitle"],
-    url: WorkExperiences["url"],
-    ariaLabelForCompanyNameAndJobTitle: WorkExperiences["ariaLabelForCompanyNameAndJobTitle"]
+    companyName: WorkExperiencesTypes["companyName"],
+    jobTitle: WorkExperiencesTypes["jobTitle"],
+    url: WorkExperiencesTypes["url"],
+    ariaLabelForCompanyNameAndJobTitle: WorkExperiencesTypes["ariaLabelForCompanyNameAndJobTitle"]
   ) => {
     return (
       <h3 className="font-medium leading-snug text-slate-200">
@@ -103,13 +70,13 @@ const Experience = () => {
   };
 
   const renderJobDescription = (
-    jobDescription: WorkExperiences["jobDescription"]
+    jobDescription: WorkExperiencesTypes["jobDescription"]
   ) => {
     return <p className="mt-2 text-sm leading-normal">{jobDescription}</p>;
   };
 
   const renderMappedTechStacks = (
-    techStacks: WorkExperiences["techStacks"]
+    techStacks: WorkExperiencesTypes["techStacks"]
   ) => {
     return (
       <>
@@ -199,7 +166,7 @@ const Experience = () => {
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label="Work experience"
     >
-      {renderSectionTypeForSmallScreen()}
+      {renderSectionNameForSmallScreen()}
       <div>
         <ol className="group/list">{renderMappedWorkExperiences()}</ol>
         {renderResumeLink()}
