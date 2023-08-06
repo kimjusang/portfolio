@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import { About, Experience, Layout, Projects } from "~/components";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -24,4 +24,6 @@ export default function Home() {
       </Layout>
     </>
   );
-}
+};
+
+export default Home;
