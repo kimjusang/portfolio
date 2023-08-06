@@ -1,8 +1,10 @@
+import { type ReactNode } from "react";
 import Link from "next/link";
+
 import { workExperiences } from "~/constants";
 import { type WorkExperiencesTypes } from "~/types";
 
-const Experience = (): JSX.Element => {
+const Experience = (): ReactNode => {
   const renderSectionNameForSmallScreen = () => {
     return (
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -16,7 +18,7 @@ const Experience = (): JSX.Element => {
   const renderEmploymentPeriods = (
     employmentPeriod: WorkExperiencesTypes["employmentPeriod"],
     ariaLabelForEmploymentPeriod: WorkExperiencesTypes["ariaLabelForEmploymentPeriod"]
-  ): JSX.Element => {
+  ) => {
     return (
       <header
         className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
@@ -32,7 +34,7 @@ const Experience = (): JSX.Element => {
     jobTitle: WorkExperiencesTypes["jobTitle"],
     url: WorkExperiencesTypes["url"],
     ariaLabelForCompanyNameAndJobTitle: WorkExperiencesTypes["ariaLabelForCompanyNameAndJobTitle"]
-  ): JSX.Element => {
+  ) => {
     return (
       <h3 className="font-medium leading-snug text-slate-200">
         <div>
@@ -68,13 +70,13 @@ const Experience = (): JSX.Element => {
 
   const renderJobDescription = (
     jobDescription: WorkExperiencesTypes["jobDescription"]
-  ): JSX.Element => {
+  ) => {
     return <p className="mt-2 text-sm leading-normal">{jobDescription}</p>;
   };
 
   const renderMappedTechStacks = (
     techStacks: WorkExperiencesTypes["techStacks"]
-  ): JSX.Element => {
+  ) => {
     return (
       <>
         {techStacks.map((stack) => (
@@ -88,7 +90,7 @@ const Experience = (): JSX.Element => {
     );
   };
 
-  const renderMappedWorkExperiences = (): JSX.Element => {
+  const renderMappedWorkExperiences = () => {
     return (
       <>
         {workExperiences.map((experience) => (
@@ -121,7 +123,7 @@ const Experience = (): JSX.Element => {
     );
   };
 
-  const renderResumeLink = (): JSX.Element => {
+  const renderResumeLink = () => {
     return (
       <div className="mt-12">
         <Link

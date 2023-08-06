@@ -1,13 +1,15 @@
+import { type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { projects } from "~/constants";
 import { type ProjectTypes } from "~/types";
 
-const Projects = (): JSX.Element => {
+const Projects = (): ReactNode => {
   const renderTitle = (
     projectTitle: ProjectTypes["projectTitle"],
     projectUrl: ProjectTypes["projectUrl"]
-  ): JSX.Element => {
+  ) => {
     return (
       <h3>
         <Link
@@ -40,7 +42,7 @@ const Projects = (): JSX.Element => {
 
   const renderDescription = (
     projectDescription: ProjectTypes["projectDescription"]
-  ): JSX.Element => {
+  ) => {
     return <p className="mt-2 text-sm leading-normal">{projectDescription}</p>;
   };
 
@@ -60,7 +62,7 @@ const Projects = (): JSX.Element => {
     );
   };
 
-  const renderProjects = (): JSX.Element => {
+  const renderProjects = () => {
     return (
       <>
         {projects.map((project) => (
@@ -79,7 +81,7 @@ const Projects = (): JSX.Element => {
     );
   };
 
-  const renderProjectArchiveLink = (): JSX.Element => {
+  const renderProjectArchiveLink = () => {
     return (
       <div className="mt-12">
         <Link
