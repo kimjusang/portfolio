@@ -1,29 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
-interface ProjectTypes {
-  projectTitle: string;
-  projectDescription: string;
-  projectUrl: string;
-}
+import { projects } from "~/constants";
+import { type ProjectTypes } from "~/types";
 
 const Projects = (): JSX.Element => {
-  const projects: ProjectTypes[] = [
-    {
-      projectTitle: "Project Number 1",
-      projectDescription:
-        " Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
-      projectUrl:
-        "https://www.newline.co/courses/build-a-spotify-connected-app",
-    },
-    {
-      projectTitle: "Project Number 2",
-      projectDescription:
-        " Video course that teaches how to build a web app with the Spotify Web API.",
-      projectUrl: "https://www.youtube.com/",
-    },
-  ];
-
   const renderTitle = (
     projectTitle: ProjectTypes["projectTitle"],
     projectUrl: ProjectTypes["projectUrl"]

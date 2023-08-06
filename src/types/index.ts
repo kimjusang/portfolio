@@ -8,3 +8,9 @@ export interface WorkExperiencesTypes {
   ariaLabelForCompanyNameAndJobTitle: string;
   ariaLabelForEmploymentPeriod: string;
 }
+
+export interface ProjectTypes {
+  projectTitle: string;
+  projectDescription: string;
+  projectUrl: string;
+}
