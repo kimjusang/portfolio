@@ -1,3 +1,9 @@
+import { type ReactNode } from "react";
+
+export interface LayoutProps {
+  children: ReactNode;
+}
+
 export interface WorkExperiencesTypes {
   companyName: string;
   jobTitle: string;
@@ -13,4 +19,8 @@ export interface ProjectTypes {
   projectTitle: string;
   projectDescription: string;
   projectUrl: string;
+}
+
+export interface SectionHeaderTypes {
+  sectionName: string;
 }
