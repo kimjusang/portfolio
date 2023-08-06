@@ -16,7 +16,7 @@ const Experience = (): JSX.Element => {
   const renderEmploymentPeriods = (
     employmentPeriod: WorkExperiencesTypes["employmentPeriod"],
     ariaLabelForEmploymentPeriod: WorkExperiencesTypes["ariaLabelForEmploymentPeriod"]
-  ) => {
+  ): JSX.Element => {
     return (
       <header
         className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
@@ -32,7 +32,7 @@ const Experience = (): JSX.Element => {
     jobTitle: WorkExperiencesTypes["jobTitle"],
     url: WorkExperiencesTypes["url"],
     ariaLabelForCompanyNameAndJobTitle: WorkExperiencesTypes["ariaLabelForCompanyNameAndJobTitle"]
-  ) => {
+  ): JSX.Element => {
     return (
       <h3 className="font-medium leading-snug text-slate-200">
         <div>
@@ -71,13 +71,13 @@ const Experience = (): JSX.Element => {
 
   const renderJobDescription = (
     jobDescription: WorkExperiencesTypes["jobDescription"]
-  ) => {
+  ): JSX.Element => {
     return <p className="mt-2 text-sm leading-normal">{jobDescription}</p>;
   };
 
   const renderMappedTechStacks = (
     techStacks: WorkExperiencesTypes["techStacks"]
-  ) => {
+  ): JSX.Element => {
     return (
       <>
         {techStacks.map((stack) => (
@@ -91,7 +91,7 @@ const Experience = (): JSX.Element => {
     );
   };
 
-  const renderMappedWorkExperiences = () => {
+  const renderMappedWorkExperiences = (): JSX.Element => {
     return (
       <>
         {workExperiences.map((experience) => (
@@ -124,7 +124,7 @@ const Experience = (): JSX.Element => {
     );
   };
 
-  const renderResumeLink = () => {
+  const renderResumeLink = (): JSX.Element => {
     return (
       <div className="mt-12">
         <Link
