@@ -21,6 +21,12 @@ export interface ProjectTypes {
   projectUrl: string;
 }
 
+export interface EducationTypes {
+  collegeName: string;
+  major: string;
+  description: string;
+}
+
 export interface SectionHeaderTypes {
   sectionName: string;
 }

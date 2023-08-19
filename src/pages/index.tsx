@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { About, Experience, Layout, Projects } from "~/components";
+import { About, Experience, Layout, Projects, Education } from "~/components";
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
       <Layout>
         <About />
         <Experience />
+        <Education />
         <Projects />
       </Layout>
     </>

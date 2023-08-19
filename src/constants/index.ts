@@ -1,8 +1,12 @@
-import { type ProjectTypes, type WorkExperiencesTypes } from "~/types";
+import {
+  type EducationTypes,
+  type ProjectTypes,
+  type WorkExperiencesTypes,
+} from "~/types";
 
 export const workExperiences: WorkExperiencesTypes[] = [
   {
-    companyName: `UXPin`,
+    companyName: "UXPin",
     jobTitle: "Software Engineer",
     employmentPeriod: "2021 — Present",
     jobDescription:
@@ -11,12 +15,15 @@ export const workExperiences: WorkExperiencesTypes[] = [
       "React",
       "Redux",
       "Node.js",
-      "Ruby on Rails",
       "TypeScript",
       "JavaScript",
+      "Ruby on Rails",
+      "PHP",
       "SCSS",
       "LESS",
       "MySQL",
+      "Docker",
+      "AWS",
     ],
     url: "https://www.uxpin.com/",
     ariaLabelForCompanyNameAndJobTitle: "Software Engineer at UXPin",
@@ -26,15 +33,18 @@ export const workExperiences: WorkExperiencesTypes[] = [
 
 export const projects: ProjectTypes[] = [
   {
-    projectTitle: "Project Number 1",
+    projectTitle: "jusangkim.com",
     projectDescription:
-      " Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
-    projectUrl: "https://www.newline.co/courses/build-a-spotify-connected-app",
+      "My personal portfolio website that showcases what I have done and experienced as a software engineer. Built with Next.js and Tailwind CSS",
+    projectUrl: "https://www.jusangkim.com/",
   },
+];
+
+export const educations: EducationTypes[] = [
   {
-    projectTitle: "Project Number 2",
-    projectDescription:
-      " Video course that teaches how to build a web app with the Spotify Web API.",
-    projectUrl: "https://www.youtube.com/",
+    collegeName: "University of Utah",
+    major: "Information Systems, B.S.",
+    description:
+      "Learned fundamentals of computer science, including algorithms, data structures, and computer organization. Also, developed practical skills in programming and software design. (Go Utes!)",
   },
 ];
