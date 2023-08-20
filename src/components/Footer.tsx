@@ -4,61 +4,26 @@ const Footer = () => {
   return (
     <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
       <p>
-        Loosely designed in&nbsp;
+        This portfolio website is built with Next.js and Tailwind CSS. Please
+        contact me via{" "}
         <Link
           className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.figma.com/"
+          href="https://www.linkedin.com/in/jusang-kim/"
           target="_blank"
           rel="noreferrer"
         >
-          Figma
+          LinkedIn{" "}
         </Link>
-        &nbsp;and coded in&nbsp;
+        or{" "}
         <Link
           className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.figma.com/"
+          href="mailto: kimjusang@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          Visual Studio Code
+          email{" "}
         </Link>
-        &nbsp;by yours truly. Built with&nbsp;
-        <Link
-          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.figma.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Next.js
-        </Link>
-        &nbsp;and&nbsp;
-        <Link
-          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.figma.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tailwind CSS
-        </Link>
-        , deployed with&nbsp;
-        <Link
-          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.figma.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Vercel
-        </Link>
-        . All text is set in the&nbsp;
-        <Link
-          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://www.figma.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Inter
-        </Link>
-        &nbsp;typeface.
+        if you have any questions!
       </p>
     </footer>
   );
