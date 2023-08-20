@@ -1,28 +1,24 @@
-import Link from "next/link";
+import CustomLink from "./CustomLink";
 
 const Footer = () => {
+  const commonProps: { linkType: "footer" } = { linkType: "footer" };
+
   return (
     <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
       <p>
         This portfolio website is built with Next.js and Tailwind CSS. Please
         contact me via{" "}
-        <Link
-          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
+        <CustomLink
+          {...commonProps}
           href="https://www.linkedin.com/in/jusang-kim/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn{" "}
-        </Link>
+          text="LinkedIn"
+        />{" "}
         or{" "}
-        <Link
-          className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-          href="mailto: kimjusang@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          email{" "}
-        </Link>
+        <CustomLink
+          {...commonProps}
+          href="mailto:kimjusang@gmail.com"
+          text="email"
+        />{" "}
         if you have any questions!
       </p>
     </footer>
