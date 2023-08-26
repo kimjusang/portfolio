@@ -1,12 +1,12 @@
 import Link from "next/link";
-import React, { FC, ReactNode } from "react";
+import { type ReactNode } from "react";
 
 interface NavLinkProps {
   href: string;
   label: string;
 }
 
-const NavLink: FC<NavLinkProps> = ({ href, label }) => (
+const NavLink = ({ href, label }: NavLinkProps): ReactNode => (
   <li>
     <Link className="group flex items-center py-3" href={href}>
       <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -23,7 +23,7 @@ interface SocialLinkProps {
   children: ReactNode;
 }
 
-const SocialLink: FC<SocialLinkProps> = ({ href, label, children }) => (
+const SocialLink = ({ href, label, children }: SocialLinkProps): ReactNode => (
   <li className="mr-5 text-xs">
     <Link
       className="block hover:text-slate-200"
