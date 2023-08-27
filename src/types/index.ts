@@ -30,3 +30,14 @@ export interface EducationTypes {
 export interface SectionHeaderTypes {
   sectionName: string;
 }
+
+export interface NavLinkProps {
+  href: string;
+  label: string;
+}
+
+export interface SocialLinkProps {
+  href: string;
+  label: string;
+  children: ReactNode;
+}

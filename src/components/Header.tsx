@@ -1,12 +1,9 @@
 import Link from "next/link";
 import { type ReactNode } from "react";
 
-interface NavLinkProps {
-  href: string;
-  label: string;
-}
+import { type SocialLinkProps, type NavLinkProps } from "~/types";
 
-const NavLink = ({ href, label }: NavLinkProps): ReactNode => (
+const NavLink = ({ href, label }: NavLinkProps) => (
   <li>
     <Link className="group flex items-center py-3" href={href}>
       <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
@@ -17,13 +14,7 @@ const NavLink = ({ href, label }: NavLinkProps): ReactNode => (
   </li>
 );
 
-interface SocialLinkProps {
-  href: string;
-  label: string;
-  children: ReactNode;
-}
-
-const SocialLink = ({ href, label, children }: SocialLinkProps): ReactNode => (
+const SocialLink = ({ href, label, children }: SocialLinkProps) => (
   <li className="mr-5 text-xs">
     <Link
       className="block hover:text-slate-200"
@@ -37,7 +28,7 @@ const SocialLink = ({ href, label, children }: SocialLinkProps): ReactNode => (
   </li>
 );
 
-const Header = () => (
+const Header = (): ReactNode => (
   <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
     <div>
       <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
