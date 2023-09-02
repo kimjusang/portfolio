@@ -38,8 +38,7 @@ const Header = (): ReactNode => (
         Software Engineer at UXPin
       </h2>
       <p className="mt-4 max-w-xs leading-normal">
-        I build accessible, inclusive products and digital experiences for the
-        web.
+        As a software engineer, I adapt to solve technical problems.
       </p>
       <nav className="nav hidden lg:block" aria-label="In-page jump links">
         <ul className="mt-16 w-max">
