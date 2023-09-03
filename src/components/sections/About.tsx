@@ -21,8 +21,8 @@ const About = (): ReactNode => {
           it marked my first exposure to the world of software development.
         </p>
         <p className="about-paragraph">
-          Currently, my primary focus is on creating new features and optimizing
-          performance at{" "}
+          Currently, my primary focus is on creating new features and
+          maintaining infrastructures at{" "}
           <CustomLink
             {...commonProps}
             href="https://www.uxpin.com/"
@@ -34,8 +34,8 @@ const About = (): ReactNode => {
         </p>
         <p className="about-paragraph">
           When I&apos;m away from the keyboard, I enjoy spending time with my
-          wife and friends. I casually practice beatboxing as a hobby and study
-          Japanese, hoping to have a full conversation in Japanese with my
+          wife and friends. I casually practice beatboxing, chess as hobbies and
+          study Japanese, hoping to have a full conversation in Japanese with my
           Japanese wife some day.
         </p>
       </div>
