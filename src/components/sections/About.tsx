@@ -21,8 +21,8 @@ const About = (): ReactNode => {
           it marked my first exposure to the world of software development.
         </p>
         <p className="about-paragraph">
-          Currently, my primary focus is on creating new features and
-          maintaining infrastructures at{" "}
+          Currently, my primary focus is on creating new features and improving
+          infrastructures at{" "}
           <CustomLink
             {...commonProps}
             href="https://www.uxpin.com/"
