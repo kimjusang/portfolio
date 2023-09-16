@@ -10,7 +10,7 @@ export const workExperiences: WorkExperiencesTypes[] = [
     jobTitle: "Software Engineer",
     employmentPeriod: "2021 — Present",
     jobDescription:
-      "Develop new features and maintain infrastructures for the UI/UX design tool of UXPin, enabling clients like PayPal, Porsche, Texas Instruments, and others to create final product-looking prototypes with advanced interactions. Additionally, improve performance by refactoring and analyzing technical metrics.",
+      "Develop new features and improve infrastructures for the UI/UX design tool of UXPin, enabling clients like PayPal, Porsche, Texas Instruments, and others to create final product-looking prototypes with advanced interactions. Additionally, improve performance by refactoring and analyzing technical metrics.",
     techStacks: [
       "Docker",
       "Kubernetes",
