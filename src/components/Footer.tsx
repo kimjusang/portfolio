@@ -1,6 +1,8 @@
+import { type ReactNode } from "react";
+
 import CustomLink from "./CustomLink";
 
-const Footer = () => {
+const Footer = (): ReactNode => {
   const commonProps: { linkType: "footer" } = { linkType: "footer" };
 
   return (
