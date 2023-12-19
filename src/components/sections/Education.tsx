@@ -23,11 +23,13 @@ const Education = (): ReactNode => {
     );
   };
 
-  const renderDescription = (description: EducationTypes["description"]) => {
+  const renderCollegeDescription = (
+    description: EducationTypes["description"]
+  ) => {
     return <p className="mt-2 text-sm leading-normal">{description}</p>;
   };
 
-  const collegeImage = () => {
+  const renderCollegeImage = () => {
     return (
       <Image
         className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
@@ -55,9 +57,9 @@ const Education = (): ReactNode => {
                   education.collegeName,
                   education.major
                 )}
-                {renderDescription(education.description)}
+                {renderCollegeDescription(education.description)}
               </div>
-              {collegeImage()}
+              {renderCollegeImage()}
             </div>
           </li>
         ))}
