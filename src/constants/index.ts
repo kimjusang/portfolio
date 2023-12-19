@@ -15,16 +15,19 @@ export const workExperiences: WorkExperiencesTypes[] = [
       "Docker",
       "Kubernetes",
       "AWS",
-      "Ruby on Rails",
       "MySQL",
-      "Node.js",
+      "PostgreSQL",
+      "Ruby",
+      "Ruby on Rails",
       "TypeScript",
       "JavaScript",
-      "PHP",
+      "Node.js",
       "React",
       "Redux",
       "SCSS",
       "LESS",
+      "Prometheus",
+      "Grafana",
     ],
     url: "https://www.uxpin.com/",
     ariaLabelForCompanyNameAndJobTitle: "Software Engineer at UXPin",
@@ -33,6 +36,18 @@ export const workExperiences: WorkExperiencesTypes[] = [
 ];
 
 export const projects: ProjectTypes[] = [
+  {
+    projectTitle: "UXPin Merge",
+    projectDescription:
+      "Merge offers an innovative approach, enabling users to seamlessly integrate and synchronize React.js components, sourced from GIT repositories, directly into the UXPin Editor. These imported components are exact replicas of the ones used in development, ensuring that their appearance, behavior, and functionality (including interactions and data handling) mirror the actual product as encountered by end-users.",
+    projectUrl: "https://www.uxpin.com/docs/merge/what-is-uxpin-merge/",
+  },
+  {
+    projectTitle: "UXPin Dashboard",
+    projectDescription:
+      "UXPin Dashboard provides a comprehensive interface for accessing and managing all prototypes, including wireframes, mockups, and designs. This centralized system not only facilitates viewing and organizing these components but also controls user permissions, ensuring that every aspect of the project mirrors the quality and functionality of the final product as it would appear to end-users.",
+    projectUrl: "https://www.uxpin.com/docs/dashboard/projects/",
+  },
   {
     projectTitle: "jusangkim.com",
     projectDescription:

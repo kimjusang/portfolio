@@ -21,6 +21,10 @@ export interface ProjectTypes {
   projectUrl: string;
 }
 
+export type ProjectImageMap = {
+  [key in ProjectTypes["projectTitle"]]: string;
+};
+
 export interface EducationTypes {
   collegeName: string;
   major: string;
