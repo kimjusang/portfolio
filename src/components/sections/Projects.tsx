@@ -50,6 +50,7 @@ const Projects = (): ReactNode => {
 
   // Define a mapping of project titles to image file names
   const projectImageMap: ProjectImageMap = {
+    "Kubernetes Monitoring System": "/KubernetesMonitoringSystem.png",
     "UXPin Merge": "/UxpinMerge.png",
     "UXPin Dashboard": "/UxpinDashboard.png",
     "jusangkim.com": "/PersonalPortfolio.png",

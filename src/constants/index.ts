@@ -37,6 +37,12 @@ export const workExperiences: WorkExperiencesTypes[] = [
 
 export const projects: ProjectTypes[] = [
   {
+    projectTitle: "Kubernetes Monitoring System",
+    projectDescription:
+      "In multiple Kubernetes clusters, created a monitoring system that checks the health of applications and resources using Prometheus and Grafana. This monitoring system continuously collects data on system performance and stores it in a time-series database. This enables the identification and diagnosis of problems, the setup of alerts, and the optimization of systems for maximum efficiency.",
+    projectUrl: "hhttps://github.com/prometheus-operator/kube-prometheus",
+  },
+  {
     projectTitle: "UXPin Merge",
     projectDescription:
       "Merge offers an innovative approach, enabling users to seamlessly integrate and synchronize React.js components, sourced from GIT repositories, directly into the UXPin Editor. These imported components are exact replicas of the ones used in development, ensuring that their appearance, behavior, and functionality (including interactions and data handling) mirror the actual product as encountered by end-users.",
