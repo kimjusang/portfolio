@@ -18,7 +18,7 @@ const About = (): ReactNode => {
           As a part of my academic journey, I attended a small lecture where a
           guest speaker, a former software engineer at NASA, introduced his work
           on heat flow simulations. It was a captivating experience for me, as
-          it marked my first exposure to the world of software development.
+          it opened my eyes to what coding can achieve.
         </p>
         <p className="about-paragraph">
           Currently, my primary focus is on creating new features and improving
@@ -33,10 +33,9 @@ const About = (): ReactNode => {
           development and make developers&apos; lives easier.
         </p>
         <p className="about-paragraph">
-          When I&apos;m away from the keyboard, I enjoy spending time with my
-          wife and friends. I casually practice beatboxing, chess as hobbies and
-          study Japanese, hoping to have a full conversation in Japanese with my
-          Japanese wife some day.
+          When I&apos;m away from the keyboard, I love spending time with my
+          wife and friends. Also, I enjoy beatboxing, chess, and learning
+          Japanese as hobbies.
         </p>
       </div>
     </section>
