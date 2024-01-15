@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Head>
         <title>Jusang Kim</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/ThumbsUp.ico" />
 
         {/* Open Graph Meta Tags */}
 
