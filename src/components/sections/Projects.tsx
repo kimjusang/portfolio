@@ -53,7 +53,7 @@ const Projects = (): ReactNode => {
     "Kubernetes Monitoring System": "/KubernetesMonitoringSystem.png",
     "UXPin Merge": "/UxpinMerge.png",
     "UXPin Dashboard": "/UxpinDashboard.png",
-    "jusangkim.com": "/PersonalPortfolio.png",
+    "Portfolio Website": "/PersonalPortfolio.png",
     // Add more mappings as needed
   };
 

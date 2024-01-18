@@ -40,7 +40,7 @@ export const projects: ProjectTypes[] = [
     projectTitle: "Kubernetes Monitoring System",
     projectDescription:
       "In multiple Kubernetes clusters, created a monitoring system that checks the health of applications and resources using Prometheus and Grafana. This monitoring system continuously collects data on system performance and stores it in a time-series database. This enables the identification and diagnosis of problems, the setup of alerts, and the optimization of systems for maximum efficiency.",
-    projectUrl: "hhttps://github.com/prometheus-operator/kube-prometheus",
+    projectUrl: "https://github.com/prometheus-operator/kube-prometheus",
   },
   {
     projectTitle: "UXPin Merge",
@@ -55,10 +55,10 @@ export const projects: ProjectTypes[] = [
     projectUrl: "https://www.uxpin.com/docs/dashboard/projects/",
   },
   {
-    projectTitle: "jusangkim.com",
+    projectTitle: "Portfolio Website",
     projectDescription:
       "My personal portfolio website that showcases what I have done and experienced as a software engineer. Built with Next.js and Tailwind CSS",
-    projectUrl: "https://www.jusangkim.com/",
+    projectUrl: "https://jusangkim.vercel.app/",
   },
 ];
 
